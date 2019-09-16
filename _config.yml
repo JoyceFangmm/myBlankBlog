@@ -1,3 +1,19 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "" # the name of your site, e.g. ACME Corp.
+
+
+
+# Site settings
+SEOTitle: 房梅梅的博客 | Joyce Blog  # 用于SEO搜索时使用，|分开关键词
+description:  #用作书签页面的默认描述
+url: "https://joycefangmm.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+# Sidebar settings
+sidebar-avatar: /assets/img/avatar-joyce-ny.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
