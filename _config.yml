@@ -17,4 +17,4 @@ sidebar-avatar: /assets/img/avatar-joyce-ny.png      # use absolute URL, seeing 
 
 
 # Progressive Web Apps
-chrome-tab-theme-color: "#000000"
+chrome-tab-theme-color: "#000000"  #比如，WPA状态栏颜色
