@@ -1,10 +1,10 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
 
 
 
 # Site settings
+title: "Joyce Blog" # the name of your site, e.g. ACME Corp.
 SEOTitle: 房梅梅的博客 | Joyce Blog  # 用于SEO搜索时使用，|分开关键词
 description:  #用作书签页面的默认描述
 url: "https://joycefangmm.github.io"              # your host, for absolute URL
@@ -18,3 +18,7 @@ sidebar-avatar: /assets/img/avatar-joyce-ny.png      # use absolute URL, seeing 
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"  #比如，WPA状态栏颜色
+
+
+# Markdown settings
+markdown: kramdown  #支持目录生成

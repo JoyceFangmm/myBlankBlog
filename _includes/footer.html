@@ -1,0 +1,32 @@
+<footer>
+    <divc class="container">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                 <!-- 房志梅 SNS Link -->
+                 
+                 <p class="copyright text-muted">
+                        Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                        <br>
+                        Learn from <a href="http://huangxuan.me">Hux Blog</a> |
+                        <iframe
+                            style="margin-left: 2px; margin-bottom:-5px;text-align: center;"
+                            frameborder="0" scrolling="0" width="30px" height="20px"
+                            src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io" >
+                            <!-- 展示star数目 &type=star&count=true -->
+                        </iframe>
+                    </p>
+            </div>
+    </div>
+</footer>
+
+<!-- Side Catalog 侧边栏目录 -->
+{% if page.catalog %}
+<script>
+    function generateCatalog (selector) {
+
+    }
+
+    generateCatalog(".catalog-body");
+
+
+</script>
+{% endif %}
