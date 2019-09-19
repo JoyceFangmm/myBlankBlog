@@ -7,7 +7,7 @@
                  <p class="copyright text-muted">
                         Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                         <br>
-                        Learn from <a href="http://huangxuan.me">Hux Blog</a> |
+                        Learn from <a href="http://huangxuan.me">Hux</a> |
                         <iframe
                             style="margin-left: 2px; margin-bottom:-5px;text-align: center;"
                             frameborder="0" scrolling="0" width="30px" height="20px"
@@ -19,8 +19,34 @@
     </div>
 </footer>
 
+
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c){
+        var d = document, t = 'script', o = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c){
+            o.addEventListener('load', function(e){
+                c(null, e);
+            }, false);
+        }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+<!-- Fastclick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
 
 <!-- Side Catalog 侧边栏目录 -->
 <!-- 房志梅 需要固定 侧边栏目录，且与导航栏有关 -->
@@ -53,5 +79,27 @@
     }
 
     generateCatalog(".catalog-body");
+
+    // 触发侧边路目录
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    async("{{ '/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
 </script>
 {% endif %}
