@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # Site settings
 title: "Joyce Blog" # the name of your site, e.g. ACME Corp.
 SEOTitle: 房梅梅的博客 | Joyce Blog  # 用于SEO搜索时使用，|分开关键词
+# header-img: #默认头部展示图片
 description:  #用作书签页面的默认描述
 url: "https://joycefangmm.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
