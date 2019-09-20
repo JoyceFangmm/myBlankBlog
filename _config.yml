@@ -42,6 +42,18 @@ page-mathjax: false
 markdown: kramdown  #支持目录生成
 
 
+# 房志梅，等待验证
+# Gitalk settings
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: e3407be01d4fdeb5fd73                           #生成的clientID
+  clientSecret: 6b1de3d60d14c0f3bf2ffb931ecc2991849cceea     #生成的clientSecret
+  repo: joycefangmm.github.io    #仓库名称
+  owner: joycefangmm    #github用户名
+  admin: joycefangmm
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
 # Friends，好友的博客地址，房志梅删除掉
 friends: [
   {
