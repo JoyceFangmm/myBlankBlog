@@ -1202,7 +1202,7 @@ samp {
 }
 .post-preview > .post-meta {
   font-family: 'Lora', 'Times New Roman', serif;
-  color: #cccccc;
+  color: #bcbccc;
   font-size: 16px;
   font-style: italic;
   margin-top: 0;
@@ -1233,6 +1233,7 @@ samp {
   font-size: 13px;
   font-style: italic;
   color: #a3a3a3;
+  color: #838383;
 }
 .post-content-preview:hover {
   color: #0085a1;
