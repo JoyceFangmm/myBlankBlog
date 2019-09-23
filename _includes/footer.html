@@ -109,3 +109,19 @@
     });
 </script>
 {% endif %}
+
+{% if page.title == 'Archive' %}
+<!-- jquery.tagcloud.js -->
+<script>
+    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
+        $.fn.tagcloud.defaults = {
+            // 设置Archive云团的色值起始
+            //size: {start: 1, end: 1, unit: 'em'},
+            // 房志梅修改色值区间
+            color: {start: '#bbbbee', end: '#2f93b4'},
+        };
+        $('#tag_cloud a').tagcloud();
+    })
+</script>
+<script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
+{% endif %}
