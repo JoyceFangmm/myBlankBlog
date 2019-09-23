@@ -38,6 +38,15 @@ chrome-tab-theme-color: "#000000"  #比如，WPA状态栏颜色
 page-mathjax: false
 
 
+# Build settings
+highlighter: rouge
+anchorjs: true  
+
+
+# Gems
+plugins: [jekyll-paginate]
+
+
 # Markdown settings
 markdown: kramdown  #支持目录生成
 
