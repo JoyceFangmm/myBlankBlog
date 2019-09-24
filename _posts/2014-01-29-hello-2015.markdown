@@ -9,6 +9,10 @@ catalog: true
 tags:
     - 生活
     - Meta
+
+categories:
+    - 江苏
+    - 苏州
 ---
 
 > “Yeah It's on. ”

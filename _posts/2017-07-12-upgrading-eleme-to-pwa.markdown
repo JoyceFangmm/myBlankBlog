@@ -11,6 +11,10 @@ multilingual: true
 tags:
     - Web
     - PWA
+
+categories:
+    - 苏州
+    - 园区
 ---
 
 <!-- Chinese Version -->

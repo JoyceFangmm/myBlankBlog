@@ -19,6 +19,7 @@ twitter_username:   joycefangmm
 
 # Build settings
 highlighter: rouge
+permalink: pretty 
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true  

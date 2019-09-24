@@ -9,6 +9,9 @@ tags:
     - 知乎
     - 产品
     - UX/UI
+
+categories:
+    - 上海
 ---
 
 > 这篇文章转载自[我在知乎上的回答](http://www.zhihu.com/question/25104721/answer/30108886)
