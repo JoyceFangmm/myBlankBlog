@@ -8,6 +8,11 @@ url: "https://joycefangmm.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
+# Publish posts or collection documents with a future date.
+# ture未来时间的博客可以展示；false未来时间的博客不可以展示，直到时间发生才可以展示
+future: false
+
+
 # SNS settings
 RSS: true
 # weibo_username:     
