@@ -1,5 +1,6 @@
 <footer>
-    <divc class="container">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                  <!-- SNS Link -->
                  {% include sns-links.html center=true %}
@@ -16,6 +17,7 @@
                         </iframe>
                     </p>
             </div>
+        </div>
     </div>
 </footer>
 
@@ -30,6 +32,12 @@
 <!-- Custom Theme JavaScript -->
 <script src="{{ "/js/hux-blog.min.js " | prepend: site.baseurl }}"></script>
 
+<!-- 房志梅了解这个意思https://developers.google.com/web/fundamentals/primers/service-workers/?hl=zh-cn -->
+<!-- Service Worker -->
+{% if site.service-worker %}
+<script src="{{ "/js/snackbar.js " | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/sw-registration.js " | prepend: site.baseurl }}"></script>
+{% endif %}
 
 <!-- async load function -->
 <script>
@@ -46,6 +54,23 @@
 </script>
 
 
+<!-- jquery.tagcloud.js -->
+{% if page.title == 'Archive' or page.title == 'Category' %}
+<script>
+    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
+        $.fn.tagcloud.defaults = {
+            // 设置Archive云团的色值起始
+            //size: {start: 1, end: 1, unit: 'em'},
+            // 房志梅修改色值区间
+            color: {start: '#bbbbee', end: '#2f93b4'},
+        };
+        $('#tag_cloud a').tagcloud();
+    })
+</script>
+<script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
+{% endif %}
+
+
 <!-- Fastclick.js -->
 <script>
     async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
@@ -53,6 +78,25 @@
         if($nav) FastClick.attach($nav);
     })
 </script>
+
+
+<!-- Google Analytics -->
+{% if site.ga_track_id %}
+<script>
+    // dynamic User by Hux
+    var _gaId = '{{ site.ga_track_id }}';
+    var _gaDomain = '{{ site.ga_domain }}';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+{% endif %}
 
 
 <!-- Side Catalog 侧边栏目录 -->
@@ -76,7 +120,7 @@
             i = "#"+$(this).prop('id');
             t = $(this).text();
             c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
-            l = $('<li class="' + n + '_nav"></li').append(c);
+            l = $('<li class="' + n + '_nav"></li>').append(c);
             $(selector).append(l);
         });
 
@@ -108,20 +152,4 @@
         });
     });
 </script>
-{% endif %}
-
-{% if page.title == 'Archive' or page.title == 'Category' %}
-<!-- jquery.tagcloud.js -->
-<script>
-    async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}',function(){
-        $.fn.tagcloud.defaults = {
-            // 设置Archive云团的色值起始
-            //size: {start: 1, end: 1, unit: 'em'},
-            // 房志梅修改色值区间
-            color: {start: '#bbbbee', end: '#2f93b4'},
-        };
-        $('#tag_cloud a').tagcloud();
-    })
-</script>
-<script src='{{ "/js/archive.js " | prepend: site.baseurl }}'></script>
 {% endif %}

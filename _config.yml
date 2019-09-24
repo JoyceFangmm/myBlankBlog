@@ -5,7 +5,6 @@ SEOTitle: 房梅梅的博客 | Joyce Blog  # 用于SEO搜索时使用，|分开�
 description: "房志梅 描述"  #用作书签页面的默认描述
 keyword: "房志梅 搜索关键词"
 url: "https://joycefangmm.github.io"              # your host, for absolute URL
-url: ""
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -31,7 +30,16 @@ plugins: [jekyll-paginate]
 
 
 # Markdown settings
+# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown  #支持目录生成
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 
 # 房志梅，等待验证
@@ -63,8 +71,8 @@ featured-condition-size: 1              # 当tag数超过多少时展示
 
 
 # Progressive Web Apps
-chrome-tab-theme-color: "#000000"  #比如，WPA状态栏颜色
-
+chrome-tab-theme-color: "#ffffff"  #比如，WPA状态栏颜色
+service-worker: true
 
 # MathJax，page预览可能存在，比如首页index，但大多数时候再预览中不会出现
 page-mathjax: false
