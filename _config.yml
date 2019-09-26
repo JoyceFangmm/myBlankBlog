@@ -1,12 +1,14 @@
 # Site settings
 title: "Joyce Blog" # the name of your site, e.g. ACME Corp.
 SEOTitle: 房梅梅的博客 | Joyce Blog  # 用于SEO搜索时使用，|分开关键词
-# header-img: #默认头部展示图片
-description: "房志梅 描述"  #用作书签页面的默认描述
-keyword: "房志梅 搜索关键词"
+header-img: assets/img/home_1_beach.png #默认头部展示图片，
+description: "前端程序媛 | 迷糊的小菜鸟"  #用作书签页面的默认描述
+keyword: "Joyce Blog, JoyceFangmm, @JoyceFangmm, 房梅梅,  房梅梅的博客, 房梅梅博客, Joyce,  博客" #后期补充关键词：前端, Web, JavaScript, iOS, Swift, Objective-C #搜索关键词
 url: "https://joycefangmm.github.io"              # your host, for absolute URL
-baseurl: "/myBlankBlog"                             # for example, '/blog' if your blog hosted on 'host/blog'
+# baseurl: "/myBlankBlog"                             # for example, '/blog' if your blog hosted on 'host/blog'
 #前期都是在myBlankBlog仓库里面开发的，因此baseurl=/myBlankBlog
+
+#韩梅梅提示，所有head图片都需要压缩
 
 
 # Publish posts or collection documents with a future date.
@@ -48,7 +50,6 @@ kramdown:
       start_line: 1
 
 
-# 房志梅，等待验证
 # Gitalk settings
 gitalk:
   enable: true    #是否开启Gitalk评论
@@ -67,7 +68,7 @@ ga_domain: joycefangmm.github.io
 
 # Sidebar settings
 sidebar: true         
-sidebar-about-description: "房志梅侧边栏文案描述"       # 侧边栏文案描述
+sidebar-about-description: "前端程序媛<br>迷糊的小菜鸟"       # 侧边栏文案描述
 sidebar-avatar: /assets/img/avatar-joyce-ny.png      # 侧边栏，关于使用的图片, seeing it's used in both `/` and `/about/`
 
 
@@ -84,14 +85,10 @@ service-worker: true
 page-mathjax: false
 
 
-# Friends，好友的博客地址，房志梅删除掉
-friends: [
-  {
-    title: "房志梅测试",
-    href: "https://www.bing.com"
-  },
-  {
-    title: "房志梅2测试",
-    href: "https://www.bing.com"
-  },
-]
+# Friends，好友的博客地址
+# friends: [
+#   {
+#     title: "房梅梅的博客",
+#     href: "https://joycefangmm.github.io"
+#   }
+# ]
