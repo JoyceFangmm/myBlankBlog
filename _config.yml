@@ -4,7 +4,7 @@ SEOTitle: 房梅梅的博客 | Joyce Blog  # 用于SEO搜索时使用，|分开�
 # header-img: #默认头部展示图片
 description: "房志梅 描述"  #用作书签页面的默认描述
 keyword: "房志梅 搜索关键词"
-url: "https://joycefangmm.github.io"              # your host, for absolute URL
+url: "https://joycefangmm.github.io/myBlankBlog"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
