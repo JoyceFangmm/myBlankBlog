@@ -5,7 +5,7 @@ header-img: assets/img/home_1_beach_min.png #默认头部展示图片，
 description: "前端程序媛 | 迷糊的小菜鸟"  #用作书签页面的默认描述
 keyword: "Joyce Blog, JoyceFangmm, @JoyceFangmm, 房梅梅,  房梅梅的博客, 房梅梅博客, Joyce,  博客" #后期补充关键词：前端, Web, JavaScript, iOS, Swift, Objective-C #搜索关键词
 url: "https://joycefangmm.github.io"              # your host, for absolute URL
-# baseurl: "/myBlankBlog"                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/myBlankBlog"                             # for example, '/blog' if your blog hosted on 'host/blog'
 #前期都是在myBlankBlog仓库里面开发的，因此baseurl=/myBlankBlog
 
 
