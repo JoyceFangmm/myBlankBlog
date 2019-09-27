@@ -8,8 +8,6 @@ url: "https://joycefangmm.github.io"              # your host, for absolute URL
 # baseurl: "/myBlankBlog"                             # for example, '/blog' if your blog hosted on 'host/blog'
 #前期都是在myBlankBlog仓库里面开发的，因此baseurl=/myBlankBlog
 
-#韩梅梅提示，所有head图片都需要压缩
-
 
 # Publish posts or collection documents with a future date.
 # ture未来时间的博客可以展示；false未来时间的博客不可以展示，直到时间发生才可以展示
