@@ -2,11 +2,21 @@
   .post-container,
   .sidebar-container {
     padding-right: 5%;
+  /* 备注：博文可以使用选择 */
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+   -ms-user-select: auto;
+       user-select: auto;
   }
 }
 @media (min-width: 768px) {
   .post-container {
     padding-right: 5%;
+  /* 备注：博文可以使用选择 */
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+     -ms-user-select: auto;
+         user-select: auto;
   }
 }
 .sidebar-container {
